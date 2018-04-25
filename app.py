@@ -20,11 +20,11 @@ class students(db.Model):
     pin = db.Column(db.String(10))
 
 
-def __init__(self, name, city, addr, pin):
-    self.name = name
-    self.city = city
-    self.addr = addr
-    self.pin = pin
+    def __init__(self, name, city, addr, pin):
+        self.name = name
+        self.city = city
+        self.addr = addr
+        self.pin = pin
 
 #db.create_all()
 
